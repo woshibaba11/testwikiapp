@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fuzhou Melbourne Polytechnic</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+            color: #1c2b3a;
+            background-color: #f4f7fa;
+            line-height: 1.7;
+        }
+
+        header {
+            background-color: #0b3d6b;
+            color: #ffffff;
+            padding: 18px 0;
+        }
+
+        .wrap {
+            width: 90%;
+            max-width: 1080px;
+            margin: 0 auto;
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .brand h1 {
+            font-size: 20px;
+            letter-spacing: 1px;
+        }
+
+        nav a {
+            color: #cfe3f5;
+            text-decoration: none;
+            margin-left: 22px;
+            font-size: 15px;
+        }
+
+        nav a:hover {
+            color: #ffffff;
+            border-bottom: 2px solid #35b6a8;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #0b3d6b 0%, #14639c 60%, #1b8a8a 100%);
+            color: #ffffff;
+            padding: 90px 0 80px;
+            text-align: center;
+        }
+
+        .hero h2 {
+            font-size: 40px;
+            letter-spacing: 1px;
+            margin-bottom: 18px;
+        }
+
+        .hero p {
+            font-size: 17px;
+            color: #dbe9f6;
+            max-width: 720px;
+            margin: 0 auto 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #35b6a8;
+            color: #ffffff;
+            padding: 12px 30px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-size: 15px;
+            letter-spacing: 1px;
+        }
+
+        .btn:hover {
+            background-color: #2a9a8e;
+        }
+
+        .stats {
+            background-color: #ffffff;
+            border-bottom: 4px solid #35b6a8;
+            padding: 40px 0;
+        }
+
+        .stats .wrap {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 24px;
+            text-align: center;
+        }
+
+        .stat b {
+            display: block;
+            font-size: 30px;
+            color: #0b3d6b;
+        }
+
+        .stat span {
+            font-size: 14px;
+            color: #5a6b7c;
+        }
+
+        .section {
+            padding: 70px 0;
+        }
+
+        .section h3 {
+            font-size: 26px;
+            color: #0b3d6b;
+            margin-bottom: 14px;
+            text-align: center;
+        }
+
+        .section .lead {
+            text-align: center;
+            color: #5a6b7c;
+            max-width: 760px;
+            margin: 0 auto 40px;
+            font-size: 15px;
+        }
+
+        .cards {
+            display: flex;
+            gap: 24px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            flex: 1 1 300px;
+            background-color: #ffffff;
+            border-top: 4px solid #14639c;
+            border-radius: 6px;
+            padding: 28px 24px;
+            box-shadow: 0 2px 10px rgba(11, 61, 107, 0.08);
+        }
+
+        .card h4 {
+            color: #14639c;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            font-size: 15px;
+            color: #4a5b6c;
+        }
+
+        .alt {
+            background-color: #eaf1f7;
+        }
+
+        .pathway {
+            display: flex;
+            gap: 18px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .step {
+            background-color: #ffffff;
+            border-left: 5px solid #35b6a8;
+            padding: 20px 22px;
+            flex: 1 1 260px;
+            border-radius: 4px;
+        }
+
+        .step small {
+            color: #35b6a8;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        .step p {
+            font-size: 14px;
+            color: #4a5b6c;
+            margin-top: 6px;
+        }
+
+        footer {
+            background-color: #0b3d6b;
+            color: #cfe3f5;
+            padding: 34px 0;
+            font-size: 14px;
+            text-align: center;
+        }
+
+        footer p + p {
+            margin-top: 6px;
+            color: #9fbcd6;
+        }
+
+        @media (max-width: 640px) {
+            .hero h2 {
+                font-size: 28px;
+            }
+
+            nav a {
+                margin: 0 12px 0 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="wrap brand">
+        <h1>Fuzhou Melbourne Polytechnic</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#programs">Programs</a>
+            <a href="#pathways">Pathways</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </div>
+</header>
+
+<section class="hero">
+    <div class="wrap">
+        <h2>Study Locally, Graduate Globally</h2>
+        <p>An international higher vocational college in Fuzhou, jointly founded by Minjiang University and
+            Melbourne Polytechnic, Australia.</p>
+        <a class="btn" href="#about">Discover More</a>
+    </div>
+</section>
+
+<section class="stats">
+    <div class="wrap">
+        <div class="stat">
+            <b>1999</b>
+            <span>Cooperation since</span>
+        </div>
+        <div class="stat">
+            <b>19</b>
+            <span>International programs</span>
+        </div>
+        <div class="stat">
+            <b>83</b>
+            <span>Partner universities</span>
+        </div>
+        <div class="stat">
+            <b>1000+</b>
+            <span>Students studied overseas</span>
+        </div>
+    </div>
+</section>
+
+<section class="section" id="about">
+    <div class="wrap">
+        <h3>About the College</h3>
+        <p class="lead">Fuzhou Melbourne Polytechnic is one of only three Sino-foreign cooperative higher
+            vocational institutions in China with independent legal-entity status, and the only one of its kind
+            in Fujian Province. Approved by the Ministry of Education in January 2017, it builds on more than
+            two decades of Sino-Australian cooperation in education.</p>
+        <div class="cards">
+            <div class="card">
+                <h4>Dual Qualifications</h4>
+                <p>Students who meet both graduation requirements receive a Chinese college diploma together with
+                    an Australian Associate Degree or Diploma from Melbourne Polytechnic.</p>
+            </div>
+            <div class="card">
+                <h4>Australian Curriculum</h4>
+                <p>Courses follow the century-old Australian TAFE model and the curriculum of Melbourne
+                    Polytechnic, adapted to local industry needs and delivered in a bilingual environment.</p>
+            </div>
+            <div class="card">
+                <h4>International Faculty</h4>
+                <p>A bilingual, dual-qualified teaching team of Chinese and international lecturers supports
+                    learning that meets international professional standards.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section alt" id="programs">
+    <div class="wrap">
+        <h3>Programs</h3>
+        <p class="lead">Programs are grouped into electronic information, finance and trade, and tourism
+            clusters, all aligned with internationally recognised qualifications.</p>
+        <div class="cards">
+            <div class="card">
+                <h4>Electronic Information</h4>
+                <p>Computing, networking and digital technology programs that combine technical skills with
+                    international certification pathways.</p>
+            </div>
+            <div class="card">
+                <h4>Finance and Trade</h4>
+                <p>International trade, business and finance programs, including a provincial-level high
+                    standard professional group in international economics and trade.</p>
+            </div>
+            <div class="card">
+                <h4>Tourism and Services</h4>
+                <p>Hospitality and tourism programs designed around the growing service sector in Fujian and
+                    across the region.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section" id="pathways">
+    <div class="wrap">
+        <h3>Graduate Pathways</h3>
+        <p class="lead">Three routes help graduates move from a vocational diploma to a degree and a career.</p>
+        <div class="pathway">
+            <div class="step">
+                <small>ROUTE 01</small>
+                <h4>Employment</h4>
+                <p>Strong English skills, international professional training and dual-industry mentors help
+                    graduates enter multinational and export-oriented companies.</p>
+            </div>
+            <div class="step">
+                <small>ROUTE 02</small>
+                <h4>Top-up Degree at Home</h4>
+                <p>Graduates continue into bachelor programs at Chinese universities, with progression rates
+                    among the highest in the province.</p>
+            </div>
+            <div class="step">
+                <small>ROUTE 03</small>
+                <h4>Study in Australia</h4>
+                <p>After 2.5 years in Fuzhou, eligible students can complete a bachelor degree in about one
+                    year at Melbourne Polytechnic, then a master degree in one more year.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer id="contact">
+    <div class="wrap">
+        <p>Fuzhou Melbourne Polytechnic &middot; 9 Lian Rong Road, Shangjie District, Minhou County, Fuzhou,
+            Fujian, China &middot; Postcode 350108</p>
+        <p>Admissions hotline: 0591-83761936 / 83761930 / 83761931</p>
+    </div>
+</footer>
+
+</body>
+</html>
